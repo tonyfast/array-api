@@ -34,7 +34,7 @@ Calculates the absolute value for each element `x_i` of the input array `x` (i.e
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise absolute value. Must have the same data type as `x`.
+    -   an array containing the absolute value of each element in `x`. The returned array must have the same data type as `x`.
 
 ### <a name="acos" href="#acos">#</a> acos(x, /)
 
@@ -57,7 +57,7 @@ Calculates an implementation-dependent approximation of the principal value of t
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse cosine of each element in `x`.
+    -   an array containing the inverse cosine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="acosh" href="#acosh">#</a> acosh(x, /)
 
@@ -80,7 +80,7 @@ Calculates an implementation-dependent approximation to the inverse hyperbolic c
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse hyperbolic cosine of each element in `x`.
+    -   an array containing the inverse hyperbolic cosine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="add" href="#add">#</a> add(x1, x2, /)
 
@@ -124,7 +124,7 @@ Calculates the sum for each element `x1_i` of the input array `x1` with the resp
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise sums.
+    -   an array containing the element-wise sums. The returned array must have a data type determined by :ref:`type-promotion` rules.
 
 ### <a name="asin" href="#asin">#</a> asin(x, /)
 
@@ -148,7 +148,7 @@ Calculates an implementation-dependent approximation of the principal value of t
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse sine of each element in `x`.
+    -   an array containing the inverse sine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="asinh" href="#asinh">#</a> asinh(x, /)
 
@@ -172,7 +172,7 @@ Calculates an implementation-dependent approximation to the inverse hyperbolic s
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse hyperbolic sine of each element in `x`.
+    -   an array containing the inverse hyperbolic sine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="atan" href="#atan">#</a> atan(x, /)
 
@@ -196,7 +196,7 @@ Calculates an implementation-dependent approximation of the principal value of t
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse tangent of each element in `x`.
+    -   an array containing the inverse tangent of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="atan2" href="#atan2">#</a> atan2(x1, x2, /)
 
@@ -250,7 +250,7 @@ By IEEE 754 convention, the inverse tangent of the quotient `x1/x2` is defined f
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse tangent of the quotient `x1/x2`.
+    -   an array containing the inverse tangent of the quotient `x1/x2`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="atanh" href="#atanh">#</a> atanh(x, /)
 
@@ -276,7 +276,7 @@ Calculates an implementation-dependent approximation to the inverse hyperbolic t
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the inverse hyperbolic tangent of each element in `x`.
+    -   an array containing the inverse hyperbolic tangent of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="bitwise_and" href="#bitwise_and">#</a> bitwise_and(x1, x2, /)
 
@@ -412,7 +412,7 @@ Rounds each element `x_i` of the input array `x` to the smallest (i.e., closest 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the rounded result for each element in `x`.
+    -   an array containing the rounded result for each element in `x`. The returned array must have the same data type as `x`.
 
 ### <a name="cos" href="#cos">#</a> cos(x, /)
 
@@ -436,7 +436,7 @@ Calculates an implementation-dependent approximation to the cosine, having domai
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the cosine of each element in `x`.
+    -   an array containing the cosine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="cosh" href="#cosh">#</a> cosh(x, /)
 
@@ -458,7 +458,7 @@ Calculates an implementation-dependent approximation to the hyperbolic cosine, h
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the hyperbolic cosine of each element in `x`.
+    -   an array containing the hyperbolic cosine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="divide" href="#divide">#</a> divide(x1, x2, /)
 
@@ -492,7 +492,7 @@ Calculates the division for each element `x1_i` of the input array `x1` with the
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="equal" href="#equal">#</a> equal(x1, x2, /)
 
@@ -512,7 +512,7 @@ Computes the truth value of `x1_i == x2_i` for each element `x1_i` of the input 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="exp" href="#exp">#</a> exp(x, /)
 
@@ -536,7 +536,7 @@ Calculates an implementation-dependent approximation to the exponential function
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated exponential function result for each element in `x`.
+    -   an array containing the evaluated exponential function result for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="expm1" href="#expm1">#</a> expm1(x, /)
 
@@ -564,7 +564,7 @@ Calculates an implementation-dependent approximation to `exp(x)-1`, having domai
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated result for each element in `x`.
+    -   an array containing the evaluated result for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="floor" href="#floor">#</a> floor(x, /)
 
@@ -584,7 +584,7 @@ Rounds each element `x_i` of the input array `x` to the greatest (i.e., closest 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the rounded result for each element in `x`.
+    -   an array containing the rounded result for each element in `x`. The returned array must have the same data type as `x`.
 
 ### <a name="floor_divide" href="#floor_divide">#</a> floor_divide(x1, x2, /)
 
@@ -624,7 +624,7 @@ Computes the truth value of `x1_i > x2_i` for each element `x1_i` of the input a
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="greater_equal" href="#greater_equal">#</a> greater_equal(x1, x2, /)
 
@@ -644,7 +644,7 @@ Computes the truth value of `x1_i >= x2_i` for each element `x1_i` of the input 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="isfinite" href="#isfinite">#</a> isfinite(x, /)
 
@@ -660,7 +660,7 @@ Tests each element `x_i` of the input array `x` to determine if finite (i.e., no
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array, whose underlying data type is `bool`, containing test results. An element `out_i` is `True` if `x_i` is finite and `False` otherwise.
+    -   an array containing test results. An element `out_i` is `True` if `x_i` is finite and `False` otherwise. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="isinf" href="#isinf">#</a> isinf(x, /)
 
@@ -676,7 +676,7 @@ Tests each element `x_i` of the input array `x` to determine if equal to positiv
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array, whose underlying data type is `bool`, containing test results. An element `out_i` is `True` if `x_i` is either positive or negative infinity and `False` otherwise.
+    -   an array containing test results. An element `out_i` is `True` if `x_i` is either positive or negative infinity and `False` otherwise. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="isnan" href="#isnan">#</a> isnan(x, /)
 
@@ -692,7 +692,7 @@ Tests each element `x_i` of the input array `x` to determine whether the element
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array, whose underlying data type is `bool`, containing test results. An element `out_i` is `True` if `x_i` is `NaN` and `False` otherwise.
+    -   an array containing test results. An element `out_i` is `True` if `x_i` is `NaN` and `False` otherwise. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="less" href="#less">#</a> less(x1, x2, /)
 
@@ -712,7 +712,7 @@ Computes the truth value of `x1_i < x2_i` for each element `x1_i` of the input a
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="less_equal" href="#less_equal">#</a> less_equal(x1, x2, /)
 
@@ -732,7 +732,7 @@ Computes the truth value of `x1_i <= x2_i` for each element `x1_i` of the input 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="log" href="#log">#</a> log(x, /)
 
@@ -756,7 +756,7 @@ Calculates an implementation-dependent approximation to the natural (base `e`) l
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated natural logarithm for each element in `x`.
+    -   an array containing the evaluated natural logarithm for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="log1p" href="#log1p">#</a> log1p(x, /)
 
@@ -785,7 +785,7 @@ Calculates an implementation-dependent approximation to `log(1+x)`, where `log` 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated result for each element in `x`.
+    -   an array containing the evaluated result for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="log2" href="#log2">#</a> log2(x, /)
 
@@ -809,7 +809,7 @@ Calculates an implementation-dependent approximation to the base `2` logarithm, 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated base `2` logarithm for each element in `x`.
+    -   an array containing the evaluated base `2` logarithm for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="log10" href="#log10">#</a> log10(x, /)
 
@@ -833,7 +833,7 @@ Calculates an implementation-dependent approximation to the base `10` logarithm,
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated base `10` logarithm for each element in `x`.
+    -   an array containing the evaluated base `10` logarithm for each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="logical_and" href="#logical_and">#</a> logical_and(x1, x2, /)
 
@@ -853,7 +853,7 @@ Computes the logical AND for each element `x1_i` of the input array `x1` with th
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="logical_not" href="#logical_not">#</a> logical_not(x, /)
 
@@ -869,7 +869,7 @@ Computes the logical NOT for each element `x_i` of the input array `x`. Zeros sh
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="logical_or" href="#logical_or">#</a> logical_or(x1, x2, /)
 
@@ -889,7 +889,7 @@ Computes the logical OR for each element `x1_i` of the input array `x1` with the
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="logical_xor" href="#logical_xor">#</a> logical_xor(x1, x2, /)
 
@@ -909,7 +909,7 @@ Computes the logical XOR for each element `x1_i` of the input array `x1` with th
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="multiply" href="#multiply">#</a> multiply(x1, x2, /)
 
@@ -945,7 +945,7 @@ Calculates the product for each element `x1_i` of the input array `x1` with the 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise products.
+    -   an array containing the element-wise products. The returned array must have a data type determined by :ref:`type-promotion` rules.
 
 ### <a name="negative" href="#negative">#</a> negative(x, /)
 
@@ -981,7 +981,7 @@ Computes the truth value of `x1_i != x2_i` for each element `x1_i` of the input 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type of `bool` (i.e., must be a boolean array).
 
 ### <a name="positive" href="#positive">#</a> positive(x, /)
 
@@ -1044,7 +1044,7 @@ Calculates an implementation-dependent approximation of exponentiation by raisin
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise results.
+    -   an array containing the element-wise results. The returned array must have a data type determined by :ref:`type-promotion` rules.
 
 ### <a name="remainder" href="#remainder">#</a> remainder(x1, x2, /)
 
@@ -1085,7 +1085,7 @@ Rounds each element `x_i` of the input array `x` to the nearest integer-valued n
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the rounded result for each element in `x`.
+    -   an array containing the rounded result for each element in `x`. The returned array must have the same data type as `x`.
 
 ### <a name="sign" href="#sign">#</a> sign(x, /)
 
@@ -1107,7 +1107,7 @@ Returns an indication of the sign of a number for each element `x_i` of the inpu
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated result for each element in `x`.
+    -   an array containing the evaluated result for each element in `x`. The returned array must have the same data type as `x`.
 
 ### <a name="sin" href="#sin">#</a> sin(x, /)
 
@@ -1130,7 +1130,7 @@ Calculates an implementation-dependent approximation to the sine, having domain 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the sine of each element in `x`.
+    -   an array containing the sine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="sinh" href="#sinh">#</a> sinh(x, /)
 
@@ -1154,7 +1154,7 @@ Calculates an implementation-dependent approximation to the hyperbolic sine, hav
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the hyperbolic sine of each element in `x`.
+    -   an array containing the hyperbolic sine of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="square" href="#square">#</a> square(x, /)
 
@@ -1170,7 +1170,7 @@ Squares (`x_i * x_i`) each element `x_i` of the input array `x`.
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the evaluated result for each element in `x`.
+    -   an array containing the evaluated result for each element in `x`. The returned array must have a data type determined by :ref:`type-promotion` rules.
 
 ### <a name="sqrt" href="#sqrt">#</a> sqrt(x, /)
 
@@ -1194,7 +1194,7 @@ Calculates the square root, having domain `[0, +infinity]` and codomain `[0, +in
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the square root of each element in `x`.
+    -   an array containing the square root of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="subtract" href="#subtract">#</a> subtract(x1, x2, /)
 
@@ -1214,7 +1214,7 @@ Calculates the difference for each element `x1_i` of the input array `x1` with t
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the element-wise differences.
+    -   an array containing the element-wise differences. The returned array must have a data type determined by :ref:`type-promotion` rules.
 
 ### <a name="tan" href="#tan">#</a> tan(x, /)
 
@@ -1237,7 +1237,7 @@ Calculates an implementation-dependent approximation to the tangent, having doma
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the tangent of each element in `x`.
+    -   an array containing the tangent of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="tanh" href="#tanh">#</a> tanh(x, /)
 
@@ -1261,7 +1261,7 @@ Calculates an implementation-dependent approximation to the hyperbolic tangent, 
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the hyperbolic tangent of each element in `x`.
+    -   an array containing the hyperbolic tangent of each element in `x`. The returned array must have a data type of either `float32` or `float64`.
 
 ### <a name="trunc" href="#trunc">#</a> trunc(x, /)
 
@@ -1281,4 +1281,4 @@ Rounds each element `x_i` of the input array `x` to the integer-valued number th
 
 -   **out**: _&lt;array&gt;_
 
-    -   an array containing the rounded result for each element in `x`.
+    -   an array containing the rounded result for each element in `x`. The returned array must have the same data type as `x`.
