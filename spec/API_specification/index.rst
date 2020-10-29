@@ -19,9 +19,9 @@ API specification
    elementwise_functions
    statistical_functions
    linear_algebra_functions
+   sorting_functions
    searching_functions
    linear_algebra_functions
    set_functions
    utility_functions
    constants
-
